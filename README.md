@@ -87,3 +87,13 @@ Utilize os sliders para simular cenários e clique no botão "Gerar Análise Pro
 | :---: | :---: | :---: | :---: | :---: |
 | ![C1](Docs/1.png) | ![C2](Docs/2.png) | ![C3](Docs/3.png) | ![C4](Docs/4.png) | ![C5](Docs/5.png) |
 
+---
+### 📦 Bibliotecas e Dependências
+
+| Biblioteca | Versão | Função no Projeto |
+| :--- | :---: | :--- |
+| `numpy` | `< 2.0` | Processamento matemático e suporte a matrizes (essencial para o motor Fuzzy). |
+| `scikit-fuzzy` | Atual | Implementação da Lógica Nebulosa (Fuzzificação, Regras e Defuzzificação). |
+| `google-generativeai`| Atual | Integração com o Gemini AI para geração de relatórios e análise preditiva. |
+| `matplotlib` | Atual | Geração de gráficos 2D e da superfície de decisão 3D. |
+| `ipywidgets` | Atual | Criação dos elementos interativos do Dashboard (sliders e botões). |
