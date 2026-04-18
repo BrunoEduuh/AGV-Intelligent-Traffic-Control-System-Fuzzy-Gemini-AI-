@@ -4,8 +4,9 @@
 * **Instituição:** Fundação Salvador Arena (FTT)
 * **Curso:** Engenharia de Controle e Automação
 * **Grupo:** Grupo 05
-* **Integrantes:** * Rafael Bognar Soares da Silva
+* **Integrantes:**
     * Bruno Eduardo
+    * Rafael Bognar Soares da Silva
     * João Soares
     * William Balieiro
 
