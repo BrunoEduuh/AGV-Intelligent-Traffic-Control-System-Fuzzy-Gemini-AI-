@@ -68,3 +68,24 @@ O projeto implementa um Dashboard de alta performance no Google Colab:
 │   └── mapa_decisao_3d.png              # Screenshot da superfície de risco
 ├── README.md                            # Documentação Completa
 └── requirements.txt                     # Dependências do projeto
+```
+---
+
+## 7. Instruções para Execução
+
+* Acesse o notebook na pasta '/notebooks' via Google Colab.
+* Insira sua CHAVE_API do Google AI Studio na seção de configuração.
+* Vá em Ambiente de Execução > Executar Tudo.
+
+Utilize os sliders para simular cenários e clique no botão "Gerar Análise Profunda" para obter o relatório da IA.
+
+---
+### 📊 Evidências de Testes e Interface
+
+![Cenário 1](docs/1.png)
+![Cenário 2](docs/2.png)
+![Cenário 3](docs/3.png)
+![Cenário 4](docs/4.png)
+![Cenário 5](docs/5.png)
+
+
