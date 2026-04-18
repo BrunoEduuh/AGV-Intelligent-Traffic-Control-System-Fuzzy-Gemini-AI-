@@ -80,12 +80,10 @@ O projeto implementa um Dashboard de alta performance no Google Colab:
 Utilize os sliders para simular cenários e clique no botão "Gerar Análise Profunda" para obter o relatório da IA.
 
 ---
-### 📊 Evidências de Testes e Interface
 
-![Cenário 1](docs/1.png)
-![Cenário 2](docs/2.png)
-![Cenário 3](docs/3.png)
-![Cenário 4](docs/4.png)
-![Cenário 5](docs/5.png)
+### 📊 Evidências de Testes
 
+| Cenário 1 | Cenário 2 | Cenário 3 | Cenário 4 | Cenário 5 |
+| :---: | :---: | :---: | :---: | :---: |
+| ![C1](Docs/1.png) | ![C2](Docs/2.png) | ![C3](Docs/3.png) | ![C4](Docs/4.png) | ![C5](Docs/5.png) |
 
