@@ -1,0 +1,5 @@
+numpy<2
+scikit-fuzzy
+google-generativeai
+matplotlib
+ipywidgets
