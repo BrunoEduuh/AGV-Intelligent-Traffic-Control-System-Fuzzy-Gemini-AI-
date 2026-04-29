@@ -99,14 +99,24 @@ Utilize os sliders para simular cenários e clique no botão "Gerar Análise Pro
 | `ipywidgets` | Atual | Criação dos elementos interativos do Dashboard (sliders e botões). |
 
 
-##  Etapa 3: Inteligência Evolutiva e Preditiva
-**Abordagem Escolhida:** Redes Neurais Artificiais (RNA).
+## 🧠 Etapa 3: Inteligência Evolutiva e Preditiva
 
-**Justificativa:** Implementamos uma rede neural do tipo MLP (Multi-Layer Perceptron) para que o agente pudesse aprender com o histórico de operações. Enquanto a lógica Fuzzy (Etapa 2) atua como um sistema especialista rígido, a RNA permite prever níveis de urgência com base em padrões complexos identificados no treinamento, permitindo uma tomada de decisão mais fluida e adaptativa.
+**Abordagem Escolhida:** Redes Neurais Artificiais (RNA)
 
-**Métricas de Desempenho:**
-* Utilizado o gráfico de **Loss Curve** para demonstrar a convergência do aprendizado.
-* O modelo atingiu uma acurácia (R²) superior a 95% na simulação de cenários de risco.
+**Por que escolhemos RNA?**
+Optamos pela Rede Neural Artificial (utilizando o `MLPRegressor` do Scikit-Learn) porque ela permite dar ao nosso AGV uma real **capacidade de previsão**. Enquanto o sistema Fuzzy anterior dependia de regras fixas criadas por nós, a RNA aprendeu de forma autônoma os padrões não-lineares de risco através de um histórico de 1.500 simulações geradas pela própria lógica especialista. Isso permite que o sistema identifique cenários de risco ocultos (ex: velocidade baixa em áreas de altíssima densidade de obstáculos) que passariam despercebidos por regras manuais lineares.
 
-**Fluxo de Dados:**
-Sensores -> Rede Neural (Predição) -> Comparação com Lógica Fuzzy -> Relatório Gemini.
+### 📈 Desempenho do Modelo
+Para validar o aprendizado, acompanhamos a curva de perda (Loss) durante as épocas de treinamento. A queda acentuada e a estabilização da curva comprovam a convergência e o aprendizado eficaz do modelo.
+
+![Gráfico de Desempenho (Loss)](docs/loss_curve.png)
+
+---
+
+## ⚙️ Instruções de Execução (Atualizadas)
+
+Para rodar o sistema com a nova Inteligência Evolutiva, uma nova biblioteca foi adicionada aos requisitos.
+
+1. Instale as dependências executando o comando abaixo no terminal ou na primeira célula do notebook:
+   ```bash
+   pip install "numpy<2" scikit-fuzzy google-generativeai matplotlib ipywidgets scikit-learn
