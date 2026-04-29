@@ -109,7 +109,11 @@ Optamos pela Rede Neural Artificial (utilizando o `MLPRegressor` do Scikit-Learn
 ### 📈 Desempenho do Modelo
 Para validar o aprendizado, acompanhamos a curva de perda (Loss) durante as épocas de treinamento. A queda acentuada e a estabilização da curva comprovam a convergência e o aprendizado eficaz do modelo.
 
-![Gráfico de Desempenho (Loss)](docs/loss_curve.png)
+### 📈 Resultados da Etapa 3
+
+| Evolução do Aprendizado (Loss) | Comparação de Modelos (Dashboard) |
+| :---: | :---: |
+| ![Loss](docs/loss_curve.png) | ![Dashboard](docs/loss_curve.png(1).png) |
 
 ---
 
