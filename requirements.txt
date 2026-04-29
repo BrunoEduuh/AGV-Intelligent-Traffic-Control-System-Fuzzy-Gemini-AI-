@@ -3,3 +3,4 @@ scikit-fuzzy
 google-generativeai
 matplotlib
 ipywidgets
+scikit-learn
