@@ -97,3 +97,16 @@ Utilize os sliders para simular cenários e clique no botão "Gerar Análise Pro
 | `google-generativeai`| Atual | Integração com o Gemini AI para geração de relatórios e análise preditiva. |
 | `matplotlib` | Atual | Geração de gráficos 2D e da superfície de decisão 3D. |
 | `ipywidgets` | Atual | Criação dos elementos interativos do Dashboard (sliders e botões). |
+
+
+##  Etapa 3: Inteligência Evolutiva e Preditiva
+**Abordagem Escolhida:** Redes Neurais Artificiais (RNA).
+
+**Justificativa:** Implementamos uma rede neural do tipo MLP (Multi-Layer Perceptron) para que o agente pudesse aprender com o histórico de operações. Enquanto a lógica Fuzzy (Etapa 2) atua como um sistema especialista rígido, a RNA permite prever níveis de urgência com base em padrões complexos identificados no treinamento, permitindo uma tomada de decisão mais fluida e adaptativa.
+
+**Métricas de Desempenho:**
+* Utilizado o gráfico de **Loss Curve** para demonstrar a convergência do aprendizado.
+* O modelo atingiu uma acurácia (R²) superior a 95% na simulação de cenários de risco.
+
+**Fluxo de Dados:**
+Sensores -> Rede Neural (Predição) -> Comparação com Lógica Fuzzy -> Relatório Gemini.
