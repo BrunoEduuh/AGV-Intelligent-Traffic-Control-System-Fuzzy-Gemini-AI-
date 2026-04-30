@@ -113,7 +113,7 @@ Para validar o aprendizado, acompanhamos a curva de perda (Loss) durante as épo
 
 | Evolução do Aprendizado (Loss) | Comparação de Modelos (Dashboard) |
 | :---: | :---: |
-| ![Loss](docs/loss_curve.png) | ![Dashboard](docs/loss_curve(1).png) |
+| ![Loss](Docs/loss_curve.png) | ![Dashboard](Docs/loss_curve(1).png) |
 
 ---
 
