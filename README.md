@@ -117,10 +117,36 @@ Para validar o aprendizado, acompanhamos a curva de perda (Loss) durante as épo
 
 ---
 
-## ⚙️ Instruções de Execução (Atualizadas)
+## ⚙️ Instruções Completas de Execução
 
-Para rodar o sistema com a nova Inteligência Evolutiva, uma nova biblioteca foi adicionada aos requisitos.
+Siga o passo a passo abaixo para rodar o simulador do AGV com a Inteligência Evolutiva e a integração do Google Gemini:
 
-1. Instale as dependências executando o comando abaixo no terminal ou na primeira célula do notebook:
+### 1. Pré-requisitos
+* Conta no Google (para executar o código no Google Colab).
+* Uma chave de API válida e ativa gerada no [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+### 2. Configurando o Ambiente
+1. Navegue até a pasta `/notebooks` deste repositório e abra o arquivo `.ipynb`.
+2. Clique no botão **"Open in Colab"** ou faça o download e abra manualmente no [Google Colab](https://colab.research.google.com/).
+3. No código da Célula 2, localize a variável `CHAVE_API = "SUA_CHAVE_NOVA_AQUI"` e cole a sua chave (mantendo as aspas).
+
+### 3. Instalação e Reinício (Passo Crucial)
+Para garantir a compatibilidade do Motor Fuzzy com a Rede Neural, o ambiente precisa de versões específicas.
+1. Execute a **Primeira Célula** de código e instale as dependências executando o comando abaixo no terminal ou na primeira célula do notebook:
    ```bash
    pip install "numpy<2" scikit-fuzzy google-generativeai matplotlib ipywidgets scikit-learn
+ (`!pip install...`).
+2. *Nota:* Ignore eventuais alertas em vermelho sobre conflitos de dependências do Colab, eles não afetam este projeto.
+3. **ATENÇÃO:** Após a instalação ser concluída, vá no menu superior do Colab, clique em **Ambiente de execução** e selecione **Reiniciar sessão** (Confirme se aparecer um aviso).
+
+### 4. Rodando o Motor e a IA
+1. Após reiniciar a sessão, execute a **Segunda Célula** (que contém todo o código Python).
+2. O sistema irá gerar os dados sintéticos e treinar a Rede Neural. O gráfico de convergência (*Loss Curve*) aparecerá na tela.
+3. Logo abaixo, o **Dashboard Interativo** será carregado automaticamente.
+
+### 5. Utilizando o Simulador
+* **Testes de Risco:** Movimente os *sliders* de Distância, Velocidade e Prioridade para simular diferentes cenários logísticos.
+* **Comparativo:** Acompanhe em tempo real o gráfico de barras que compara a urgência calculada pelo especialista (Fuzzy) contra a urgência predita pela IA (RNA).
+* **Análise Interpretativa:** Clique no botão amarelo **"Análise Gemini (Etapa 3)"** para que o modelo de linguagem processe os dados dos sensores e do aprendizado de máquina, gerando um relatório detalhado sobre o estado do AGV.
+
+Para rodar o sistema com a nova Inteligência Evolutiva, uma nova biblioteca foi adicionada aos requisitos.
