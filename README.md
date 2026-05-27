@@ -5,10 +5,10 @@
 * **Curso:** Engenharia de Controle e Automação
 * **Grupo:** Grupo 05
 * **Integrantes:**
-    * Bruno Eduardo
-    * Rafael Bognar Soares da Silva
-    * João Soares
-    * William Balieiro
+    * Bruno Eduardo [062220019]  
+    * Rafael Bognar Soares da Silva [062220040]
+    * João Soares [061230042]
+    * William Balieiro [062220036]
 
 ## 2. Área Problema Selecionada
 * [x] **Logística Autônoma: Coordenação de AGVs e Otimização de Rotas**
